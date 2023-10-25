@@ -6,14 +6,6 @@ Date: 2023-10-24 14:04:22
 LastEditors: chengbo
 LastEditTime: 2023-10-25 08:46:34
 """
-"""
-Descripttion: chengbo's code
-version: 1.0.0
-Author: chengbo
-Date: 2023-10-24 14:04:22
-LastEditors: chengbo
-LastEditTime: 2023-10-24 14:08:37
-"""
 from dataset_process import DataProcessor
 import evaluate
 import numpy as np
