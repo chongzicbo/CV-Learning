@@ -153,7 +153,7 @@ dmypy.json
 cython_debug/
 *checkpoints/*
 checkpoint-*
-outputs
+output*
 runs
 wandb
 *.jpg
