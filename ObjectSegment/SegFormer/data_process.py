@@ -77,7 +77,7 @@ def image_generator(type="training"):
         yield {"image": image, "labels": label}
 
 
-dataset = Dataset.from_generator(image_generator, keep_in_memory=True)
+dataset = Dataset.from_generator(image_generator)
 dataset = dataset.train_test_split(test_size=0.2)
 train_ds = dataset["train"]
 test_ds = dataset["test"]
