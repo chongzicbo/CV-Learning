@@ -12,7 +12,7 @@ from datasets import load_dataset
 config = datasets.DownloadConfig(resume_download=True, max_retries=100)
 cppe5 = load_dataset(
     path="/data/bocheng/huggingface/data/cppe-5",
-    # download_config=config,
+    download_config=config,
 )
 print(cppe5)
 print(cppe5["train"][0])
