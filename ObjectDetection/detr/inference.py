@@ -1,5 +1,12 @@
-from transformers import pipeline, AutoModelForObjectDetection, AutoImageProcessor
-import requests
+"""
+Descripttion: chengbo's code
+version: 1.0.0
+Author: chengbo
+Date: 2023-10-23 10:58:58
+LastEditors: chengbo
+LastEditTime: 2023-11-11 15:57:36
+"""
+from transformers import AutoModelForObjectDetection, AutoImageProcessor
 from PIL import Image, ImageDraw
 import torch
 

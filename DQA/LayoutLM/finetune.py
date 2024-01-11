@@ -1,11 +1,13 @@
 import os
 
-os.environ["XDG_CACHE_HOME"] = "/data/sshadmin/bocheng/.cache"
-model_checkpoint = "microsoft/layoutlmv2-base-uncased"
+# os.environ["XDG_CACHE_HOME"] = "/data/bocheng/.cache"
+model_checkpoint = "/data/bocheng/.cache/huggingface/hub/models--microsoft--layoutlmv2-base-uncased/snapshots/ae6f4350c668f88ec580046e35c670df6ec616c1/"
 batch_size = 4
 from datasets import load_dataset
 
-dataset = load_dataset("nielsr/docvqa_1200_examples")
+dataset = load_dataset(
+    path="/data/bocheng/.cache/huggingface/datasets/nielsr___docvqa_1200_examples/",
+)
 print(dataset)
 print(dataset["train"].features)
 updated_dataset = dataset.map(
