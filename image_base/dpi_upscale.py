@@ -7,12 +7,13 @@ def set_image_dpi_resize(image):
     :param image: An image
     :return: A rescaled image
     """
-    length_x, width_y = image.size
-    factor = min(1, float(1024.0 / length_x))
-    size = int(factor * length_x), int(factor * width_y)
-    image_resize = image.resize(size, Image.ANTIALIAS)
-    temp_filename = "./1.jpg"
-    image_resize.save(temp_filename, dpi=(300, 300))
+    # length_x, width_y = image.size
+    # factor = min(1, float(1024.0 / length_x))
+    # size = int(factor * length_x), int(factor * width_y)
+    # image_resize = image.resize(size, Image.ANTIALIAS)
+    temp_filename = "./dpi_changed.jpg"
+    # image_resize.save(temp_filename, dpi=(600, 600))
+    image.save(temp_filename, dpi=(600, 600))
     return temp_filename
 
 
